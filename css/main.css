@@ -1,0 +1,185 @@
+body {                      /*Общий задний фон*/
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.wrapper {                  /*Задний фон(обертка) workspace*/
+	width: 1400px;
+	height: 1200px;
+	margin: 20px auto;
+	background: linear-gradient(to right, #eacda3, #d6ae7b);
+	/*background: linear-gradient(to right, #70e1f5, #ffd194);
+    /*background: linear-gradient(to right, #D7DDE8, #757F9A);*/
+	border-radius: 15px;
+	border: 5px outset #1C6EA4;
+
+}
+.zagolovok {                 /*Заглавный текст*/
+	border-radius: 10px;
+	/*background: linear-gradient(to right, #ffefba, #ffffff);*/
+	background: linear-gradient(to right, #70e1f5, #ffd194);
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+	font: bold 30px "Libre Baskerville", Georgia, serif;
+	word-spacing: 10px;
+	color: black;
+	padding: 50px 60px;
+	margin:0;
+	text-align: center;
+}
+
+
+.blink {                    /*Мигающий текст*/
+  -webkit-animation: blink1 5s linear infinite;
+  animation: blink1 5s linear infinite;
+}
+@-webkit-keyframes blink1 {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+@keyframes blink1 {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+
+.anime {
+    animation: anime infinite 5s linear;
+}
+
+@keyframes anime {
+    0% {
+        color: orange;
+    }
+    0% {
+        color: red;
+    }
+    66% {
+        color: blue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+		/*внешний вид блоков для текста*/
+.about,.project,.skills,.otziv {
+	/*background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);*/
+	/*background: linear-gradient(to right, #abbaab, #ffffff);*/
+    padding: 5px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 500px;
+	height: 250px;
+	border: 5px outset #1C6EA4;
+	font-style: italic;
+}
+ /*задаем обшие принципы построения блокам*/
+.main {
+	font: 18px verdana sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.biograf {				/*Первый главный блок*/
+	width: 1200px;
+	text-indent: 10px;
+}
+
+.main h2 {
+	text-align: center;
+	margin: 0;
+}
+
+.main p {
+    margin: 0;
+	padding: 5px;
+}
+
+.foto img {							/*фото*/
+    border-radius: 10px;
+    position: fixed;
+    top: 25px;
+    right: 3px;
+    margin-right: 27px;
+
+}
+
+.nav a,.bottom a,.lside a {
+	text-decoration: none;
+	font: bold 24px verdana sans-serif;
+	color: #000000;
+	/*padding: 25px 45px;*/
+	margin: 0;
+	font-style: italic;
+}
+.nav {						/*кнопки навигации слева*/
+	list-style-type: none;
+	background: #1488CC;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	/*display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;*/
+}
+.contact h3 {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	background-color: #11110f;
+	color: #c4c0c2;
+}
+
+.bottom {						/*ссылки внизу*/
+	list-style-type: none;
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+
+	border-radius: 10px;
+}
+.lside {						/*ссылки слева */
+	list-style-type: none;
+	background: linear-gradient(to right, #D7DDE8, #757F9A);
+	top: 25px;
+	height: 320px;
+	width: 9%;
+	margin-left: 18px;
+	/*padding: 30px 10px 30px 50px;*/
+	position: fixed;
+	left: 0px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+
+}
+.rside {						/*Список под фото*/
+	list-style-type: decimal;
+	background: linear-gradient(to right, #D7DDE8, #757F9A);
+	height: 350px;
+	width: 9%;
+	margin:0;
+	margin-right: 20px;
+	padding: 30 10 30 50;
+	position: fixed;
+	top: 400px;
+    right: 0px;
+	border-radius: 10px;
+	font-style: italic;
+}
+
+
+.bold 					{/*для спанов*/
+	font-weight: bold;
+}
+
+
+
